@@ -2,13 +2,14 @@ package org.example.controllers;
 
 import org.example.Service.KaryawanService;
 import org.example.Service.KaryawanServiceImpl;
+import org.example.models.Karyawan;
 import org.example.views.KaryawanView;
 import org.example.views.MainMenu;
 
+import java.util.Map;
+
 public class KaryawanController {
     public void mainMenu() {
-//        displayKaryawan();
-
         MainMenu menuView = new MainMenu();
         menuView.displayMainMenu();
     }
@@ -20,18 +21,24 @@ public class KaryawanController {
             KaryawanView karyawanView = new KaryawanView();
             karyawanView.karyawanForm();
         } else if (selectedMenu==3) {
-            //todo ubah
+            //TODO: Fitur ubah data
         } else if (selectedMenu==4) {
-            //todo hapus
+            //TODO: Fitur hapus data
         }
     }
 
-//    public void displayKaryawan(){
-//        KaryawanService ps = new KaryawanServiceImpl();
-//        Map<Long, Product> productMap = ps.getProductList();
-//
-//        ProductView pv = new ProductView();
-//        pv.displayProducts(productMap);
-//    }
+    public void displayKaryawan(){
+        KaryawanService ks = new KaryawanServiceImpl();
+        Map<Long, Karyawan> karyawanMap = ks.getKaryawanList();
 
+        KaryawanView kv = new KaryawanView();
+        kv.displayProducts(karyawanMap);
+    }
+
+    public void add(Karyawan karyawan) {
+        KaryawanService karyawanService = new KaryawanServiceImpl();
+        karyawanService.create(karyawan);
+
+        mainMenu();
+    }
 }

@@ -7,12 +7,14 @@ import java.util.Scanner;
 public class MainMenu {
     public void displayMainMenu(){
         System.out.println("""
-                1. Tampilkan Semua
-                2. Tambah Karyawan
-                3. Ubah Karyawan
-                4. Hapus Karyawan
+                \nEMPLOYEE APPLICATION
+                ===========================
+                1. Display All Employee Data
+                2. Store Employee Data
+                3. Change Employee Data
+                4. Delete Employee Data
                 """);
-        System.out.print("Silakan Pilih Menu: ");
+        System.out.print("> Select Menu: ");
         Scanner scanner = new Scanner(System.in);
         int selectedMenu =  scanner.nextInt();
         KaryawanController kc = new KaryawanController();

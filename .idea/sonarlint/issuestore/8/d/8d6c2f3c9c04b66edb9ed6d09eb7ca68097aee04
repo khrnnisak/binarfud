@@ -1,8 +1,6 @@
 
-V
-java:S1854"@Remove this useless assignment to local variable "selectedMenu".(¦Ş¹¹
-@	java:S106"+Replace this use of System.out by a logger.(Îñë
-E	java:S106"+Replace this use of System.out by a logger.(çÏôàûÿÿÿÿ
-G
-java:S1481"1Remove this unused "selectedMenu" local variable.(¦Ş¹¹
-V	java:S125"<This block of commented-out lines of code should be removed.(¸ãÌàûÿÿÿÿ
+m	java:S106	"+Replace this use of System.out by a logger.(Îñë8¿•¸Šè1J$a801d564-ceaf-4118-84bb-10416c6db56b
+k
+java:S5665
+"(Remove this unnecessary escape sequence.(×öå‹8§Ù¹Šè1J$15749342-1bad-4999-a237-46757aef7a2e
+r	java:S106"+Replace this use of System.out by a logger.(æ³îÁüÿÿÿÿ8À•¸Šè1J$23a6d1da-c4d5-4289-832d-536ab3bfea77

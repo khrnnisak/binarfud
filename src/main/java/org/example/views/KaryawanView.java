@@ -9,36 +9,47 @@ import java.util.Set;
 import javax.management.RuntimeErrorException;
 import javax.swing.text.StyledEditorKit.BoldAction;
 
+import org.example.controllers.KaryawanController;
 import org.example.models.Karyawan;
 
 public class KaryawanView {
     public void displayProducts(Map<Long, Karyawan> karyawanMap){
-        // Set<Long> setId = Data.productMap.keySet();
-        // displayHeader();
-        // for (Long key : setId) {
-        //     displayProduct(Data.productMap.get(key));
-        // }
+        Set<Long> setId = karyawanMap.keySet();
+        displayHeader();
+        for (Long key : setId) {
+            displayProduct(karyawanMap.get(key));
+        }
     }
+
+    private void displayHeader(){
+        System.out.println("ID | Nama | Alamat | Status | Tanggal Lahir");
+        System.out.println("===========================================");
+    }
+
+    private void displayProduct(Karyawan karyawan){
+        System.out.println(karyawan.getId()+" | "+karyawan.getNama()+" | "+karyawan.getAlamat()+" | "+karyawan.getStatus()+" | "+karyawan.getDob()+" | "); //+karyawan.getCabang().getKota()
+    }
+
     public void karyawanForm() {
         Karyawan karyawan = new Karyawan();
         LocalDate birthdate;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("ID:");
+        System.out.print("ID: ");
         long id =  scanner.nextLong();
         scanner.nextLine();
 
-        System.out.print("Nama:");
+        System.out.print("Nama: ");
         String name = scanner.nextLine();
 
-        System.out.print("Alamat:");
+        System.out.print("Alamat: ");
         String alamat  = scanner.nextLine();
 
-        System.out.print("Status:");
+        System.out.print("Status (AKTIF, TIDAKAKTIF, CUTI): ");
         String status = scanner.nextLine();
         Karyawan.Status sts = Karyawan.Status.valueOf(status);
 
-        System.out.print("Tanggal Lahir: (YYYY-MM-DD)");
+        System.out.print("Tanggal Lahir (YYYY-MM-DD): ");
         String tanggalLahir = null;
         try {
             tanggalLahir = scanner.nextLine();
@@ -48,13 +59,14 @@ public class KaryawanView {
             birthdate = LocalDate.parse(tanggalLahir);
         }
 
-        System.out.print("Penempatan:");
-        String cabang  = scanner.nextLine();;
+        //TODO: Add Kantor Cabang untuk karyawan
+//        System.out.print("Penempatan: ");
+//        String cabang  = scanner.nextLine();
 //        try {
 //            cabang = scanner.nextLine();
 //            //search cabang berdasarkan input
 //        } catch (Exception e) {
-////            throw new Exception(e);
+//            throw new RuntimeException(e);
 //        } finally{
 //            if (cabang != null) {
 //                // return cabang;
@@ -63,7 +75,6 @@ public class KaryawanView {
 //
 //            }
 //        }
-        scanner.nextLine();
 
 
         karyawan.setId(id)
@@ -71,9 +82,8 @@ public class KaryawanView {
                 .setAlamat(alamat)
                 .setStatus(sts)
                 .setDob(birthdate);
-//                .setCabang(cabang);
 
-        // ProductController productController  = new ProductController();
-        // productController.add(product);
+         KaryawanController karyawanController  = new KaryawanController();
+         karyawanController.add(karyawan);
     }
 }

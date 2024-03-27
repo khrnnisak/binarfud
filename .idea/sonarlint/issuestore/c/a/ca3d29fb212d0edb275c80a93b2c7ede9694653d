@@ -1,13 +1,20 @@
 
-`	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(Ïã¡İşÿÿÿÿ
-Q	java:S125"<This block of commented-out lines of code should be removed.(Øñíæ
-@	java:S106"+Replace this use of System.out by a logger.(—ÄÀü
-E	java:S106"+Replace this use of System.out by a logger.(ã’•÷ûÿÿÿÿ
-@	java:S106""+Replace this use of System.out by a logger.(ªÿˆÉ
-@	java:S106%"+Replace this use of System.out by a logger.(ú·Éè
-@	java:S106)"+Replace this use of System.out by a logger.(ÆİÚñ
-E	java:S106."+Replace this use of System.out by a logger.(‚»ğ‡şÿÿÿÿ
-E	java:S1061"+Replace this use of System.out by a logger.(ÇÒ…€øÿÿÿÿ
-V	java:S125:"<This block of commented-out lines of code should be removed.(«Ä˜ÿÿÿÿÿ
->	java:S108<")Either remove or fill this block of code.(å¥‡
-V	java:S125J"<This block of commented-out lines of code should be removed.(¸ãÌàûÿÿÿÿ
+m	java:S106"+Replace this use of System.out by a logger.(£Ù¯½8‡Éû‰è1J$5322bac0-8f33-43a7-8ba3-ca000fc47f99
+r	java:S106"+Replace this use of System.out by a logger.(¬‘‡¾ıÿÿÿÿ8‡Éû‰è1J$16b59833-6643-421c-8ecc-76d7afbf815a
+r	java:S106"+Replace this use of System.out by a logger.(ÖãåÜşÿÿÿÿ8ˆÉû‰è1J$bab38004-7f9f-40b0-a1b3-2904d972ba6c
+m	java:S106&"+Replace this use of System.out by a logger.(—ÄÀü8‹Éû‰è1J$7a2bf05e-ee78-4cc8-bead-9e3c987cfa5e
+r	java:S106*"+Replace this use of System.out by a logger.(ã’•÷ûÿÿÿÿ8‹Éû‰è1J$2ab8fac9-8f05-4238-9f40-e5de00fe9e80
+m	java:S106-"+Replace this use of System.out by a logger.(ªÿˆÉ8‹Éû‰è1J$712b279d-6e3c-451e-b081-257d7cf00898
+r	java:S1060"+Replace this use of System.out by a logger.(ä˜£Òùÿÿÿÿ8ŒÉû‰è1J$ee5653c6-07c6-4699-97f9-1cef5fd6f492
+r	java:S1064"+Replace this use of System.out by a logger.(Å¸ƒÊúÿÿÿÿ8ŒÉû‰è1J$9301e76d-d52d-4a38-80df-c4bc9c8cb372
+r	java:S1069"+Replace this use of System.out by a logger.(‚»ğ‡şÿÿÿÿ8Éû‰è1J$1be88250-36f8-430a-93a4-8b4c83d581a3
+ƒ	java:S125?"<This block of commented-out lines of code should be removed.(Œ¯†ïüÿÿÿÿ8Éû‰è1J$34b951e0-b845-4973-88a8-d079945d2d28
+z
+java:S1135>"2Complete the task associated to this TODO comment.(ÅáüÙûÿÿÿÿ8Æˆ¬Šè1J$f05fe509-7e8c-4175-9e6b-44123f19a7c1
+…
+java:S1128"=Remove this unused import 'java.io.ObjectInputFilter.Status'.(ŞÕŠ¨ûÿÿÿÿ8Ç †Šè1J$f43644f6-48b7-4953-83cd-4653ecafed7c
+‹
+java:S1128	"CRemove this unused import 'javax.management.RuntimeErrorException'.(ÍÖÅÓøÿÿÿÿ8Ç †Šè1J$ada98f1d-9252-4fe9-927c-7385c3c184e8
+‹
+java:S1128
+"HRemove this unused import 'javax.swing.text.StyledEditorKit.BoldAction'.(±‡êÊ8Ç †Šè1J$5d796a19-ed97-4ac0-9788-54dbd1aff688

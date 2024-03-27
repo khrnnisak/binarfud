@@ -1,14 +1,19 @@
 
-s
-java:S1104"XMake karyawanList a static final constant or non-public and provide accessors if needed.(¸¬±´üÿÿÿÿ
-l
-java:S1104"VMake cabangList a static final constant or non-public and provide accessors if needed.(µ—›ð
-M
-java:S1444"2Make this "public static karyawanList" field final(¸¬±´üÿÿÿÿ
-F
-java:S1444"0Make this "public static cabangList" field final(µ—›ð
-P
-java:S1118
-":Add a private constructor to hide the implicit public one.(Ú¦Ì‰
-Q	java:S125"<This block of commented-out lines of code should be removed.(ìá‡ÿ
-Q	java:S125"<This block of commented-out lines of code should be removed.(ƒåÀ
+›
+java:S1104"XMake employeeList a static final constant or non-public and provide accessors if needed.(Çý‹8Æ£µ‰è1J$2abdaab2-19a2-4ea6-8cfb-318cff37e4d4
+š
+java:S1104"WMake karyawanMap a static final constant or non-public and provide accessors if needed.(ÀÎûÔ8Æ£µ‰è1J$b89b68b4-6f8e-4dbb-b46b-0a1d7bc4e2d3
+u
+java:S1444"2Make this "public static employeeList" field final(Çý‹8Ç£µ‰è1J$63e10a02-0a51-4670-a30a-2b1095642ab8
+t
+java:S1444"1Make this "public static karyawanMap" field final(ÀÎûÔ8Ç£µ‰è1J$02cf84e2-ba10-4d3d-bf2e-b84fba2b9f3b
+`
+java:S2386"Make this member "protected".(Çý‹8Ð£µ‰è1J$c88a70ca-c873-485e-be8a-de4be1cad483
+`
+java:S2386"Make this member "protected".(ÀÎûÔ8Ð£µ‰è1J$efcf3a81-dfe5-4173-ab68-8fed6f418b53
+}
+java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰8Ò£µ‰è1J$d8bc8e18-b155-4daa-8032-12cc2e720d4f
+}
+java:S1854"<Remove this useless assignment to local variable "surabaya".(Êë58Õ£µ‰è1J$c98db2cf-97d6-4335-84d7-b1400cf976fc
+n
+java:S1481"-Remove this unused "surabaya" local variable.(Êë58×£µ‰è1J$35de5b66-1318-4be3-8897-4295af838087

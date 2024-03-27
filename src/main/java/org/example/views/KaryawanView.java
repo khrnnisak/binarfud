@@ -19,7 +19,7 @@ public class KaryawanView {
         //     displayProduct(Data.productMap.get(key));
         // }
     }
-    public void karyawanForm() {
+    public void productForm() {
         Karyawan karyawan = new Karyawan();
         LocalDate birthdate;
 
@@ -38,40 +38,38 @@ public class KaryawanView {
         String status = scanner.nextLine();
         Karyawan.Status sts = Karyawan.Status.valueOf(status);
 
-        System.out.print("Tanggal Lahir: (YYYY-MM-DD)");
-        String tanggalLahir = null;
+        System.out.print("Tanggal Lahir:");
+        String tanggalLahir = scanner.nextLine();
         try {
-            tanggalLahir = scanner.nextLine();
+            birthdate = LocalDate.parse(tanggalLahir);
         } catch (Exception e) {
             System.out.println("Invalid input format. Please enter the date in YYYY-MM-DD format.");
-        } finally {
-            birthdate = LocalDate.parse(tanggalLahir);
         }
 
         System.out.print("Penempatan:");
-        String cabang  = scanner.nextLine();;
-//        try {
-//            cabang = scanner.nextLine();
-//            //search cabang berdasarkan input
-//        } catch (Exception e) {
-////            throw new Exception(e);
-//        } finally{
-//            if (cabang != null) {
-//                // return cabang;
-//                scanner.close();
-//            }else{
-//
-//            }
-//        }
+        String cabang  = null;
+        try {
+            cabang = scanner.nextLine();
+            //search cabang berdasarkan input
+        } catch (Exception e) {
+            throw new Exception(e);
+        } finally{
+            if (cabang != null) {
+                // return cabang;
+                scanner.close();
+            }else{
+
+            }
+        }
         scanner.nextLine();
 
-
+        
         karyawan.setId(id)
                 .setNama(name)
                 .setAlamat(alamat)
                 .setStatus(sts)
-                .setDob(birthdate);
-//                .setCabang(cabang);
+                .setDob(birthdate)
+                .setCabang(cabang);
 
         // ProductController productController  = new ProductController();
         // productController.add(product);
